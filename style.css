@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+main {
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#sayaç-container {
+    margin-bottom: 20px; /* Sayaç ile vakitler arasındaki mesafeyi daraltma */
+}
+
+#sayaç {
+    font-family: 'Digital 7', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px;
+    background-color: transparent;
+    color: #333;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.animate {
+    animation: fadeIn 0.5s ease-in-out; /* Animasyonun zamanlamasını biraz daha uzattık */
+}
+
+/* Animasyon: Sayılar değişirken yukarıya kayacak */
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-20px); /* Sayı yukarıdan gelir */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
